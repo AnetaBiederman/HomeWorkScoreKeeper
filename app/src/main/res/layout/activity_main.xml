@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.homeworkscorekeeper.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bbdefb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name_of_child_1"
+                    style="@style/UserName"
+                    android:hint="@string/first_competitor" />
+
+                <TextView
+                    android:id="@+id/total_points_for_1"
+                    style="@style/TextViewPointsCounter"
+                    android:text="0" />
+
+                <RelativeLayout
+                    android:id="@+id/smiley_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        style="@style/ImageSmileyButton"
+                        android:onClick="happySmiley1"
+                        android:src="@drawable/happy" />
+
+                    <ImageButton
+                        style="@style/ImageSmileyButton"
+                        android:layout_alignParentRight="true"
+                        android:onClick="sadSmiley1"
+                        android:src="@drawable/sad" />
+
+                </RelativeLayout>
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addOnePointFor1"
+                    android:text="@string/dishes" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addTwoPointsFor1"
+                    android:text="@string/garbage" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addThreePointsFor1"
+                    android:text="@string/vacuuming" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addFourPointsFor1"
+                    android:text="@string/room_cleaning" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name_of_child_2"
+                    style="@style/UserName"
+                    android:hint="@string/first_competitor" />
+
+                <TextView
+                    android:id="@+id/total_points_for_2"
+                    style="@style/TextViewPointsCounter"
+                    android:text="0" />
+
+                <RelativeLayout
+                    android:id="@+id/smiley_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        style="@style/ImageSmileyButton"
+                        android:onClick="happySmiley2"
+                        android:src="@drawable/happy" />
+
+                    <ImageButton
+                        style="@style/ImageSmileyButton"
+                        android:layout_alignParentRight="true"
+                        android:onClick="sadSmiley2"
+                        android:src="@drawable/sad" />
+
+                </RelativeLayout>
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addOnePointFor2"
+                    android:text="@string/dishes" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addTwoPointsFor2"
+                    android:text="@string/garbage" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addThreePointsFor2"
+                    android:text="@string/vacuuming" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addFourPointsFor2"
+                    android:text="@string/room_cleaning" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="#0d47a1"
+            android:onClick="reset"
+            android:text="@string/reset"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</ScrollView>

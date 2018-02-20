@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Home Work Score Keeper</string>
+    <string name="dishes">Dishes</string>
+    <string name="garbage">Garbage</string>
+    <string name="vacuuming">Vacuuming</string>
+    <string name="room_cleaning">room cleaning</string>
+    <string name="first_competitor">Name of child</string>
+    <string name="reset">reset</string>
+    <string name="Smiley_toast">Button was clicked 3 times %1$s deserve 1 point!</string>
+    <string name="Sad_toast">Button was clicked 3 times %1$s loose 1 point!</string>
+</resources>
